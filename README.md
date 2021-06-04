@@ -7,8 +7,7 @@ to go for me.
 I thoroughly enjoy using a utility-based approach to CSS. Given the right design tokens, mockups can be coded out quickly. I do recognize shortcomings that are described in many cases against Tailwind, like its often un-readability and inability to handle some features of CSS, like pseudo-elements, nicely. In these cases, I would prefer using a standard method of CSS using SASS, as I describe below.
 ## SASS
 Honestly I'm sure I'm not using SASS to its fullest extent with functions, math functions, etc, but I do value several features that I use regularly, like using parent selectors and nesting and using media queries within rules. I'm still trying to find the right balance between using utility-based CSS and standard usage of CSS (preferably
-some combination of [BEM CSS](https://en.bem.info/methodology/css/) and [CUBE CSS](https://cube.fyi/)), or maybe find out that there isn't one and that I should go with one or the other, but for now, I feel that both are necessary for me. As such, this project may become obsolete to me as I continue to learn and grow as a frontend developer, but
-I'm okay with that.
+some combination of [BEM CSS](https://en.bem.info/methodology/css/) and [CUBE CSS](https://cube.fyi/)), or maybe find out that there isn't one and that I should go with one or the other. I recognize that combining semantic CSS classnames with utility classnames may seem quite hectic and disorganized, but using namespacing, I think I make enough of a distinction. 
 
 # Contents
 - Bootstrapped NextJS Project
