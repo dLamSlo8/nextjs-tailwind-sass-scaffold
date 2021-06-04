@@ -1,0 +1,29 @@
+:root {
+    --font-base: 1rem; // 16px
+    --font-sm: calc(var(--font-base) * 0.875); // 14px
+    --font-md: calc(var(--font-base) * 1.125); // 18px
+    --font-lg: calc(var(--font-base) * 1.5); // 24px
+    --font-xl: calc(var(--font-base) * 2); // 32px
+    --font-xxl: calc(var(--font-base) * 2.5); // 40px
+    --font-xxxl: calc(var(--font-base) * 3); // 48px
+}
+
+h1 {
+    font-size: var(--font-xl);
+
+    @include mq('sm') {
+        font-size: var(--font-xxxl);
+    }
+}
+
+h2 {
+    font-size: var(--font-lg);
+    
+    @include mq('sm') {
+        font-size: var(--font-xl);
+    }
+}
+
+h3 {
+    font-size: var(--font-md);
+}

@@ -1,0 +1,27 @@
+$breakpoints: (
+    "xxs": 400px,
+    "xs": 480px,
+    "sm": 576px,
+    "md": 768px,
+    "md-lg": 950px,
+    "lg": 1024px,
+    'lg-xl': 1148px,
+    "xl": 1248px,
+    "xxl": 1440px
+);
+
+@mixin mq($value, $type: min, $dimension: width) {
+    @if map_has_key($breakpoints, $value) {
+        $value: map_get($breakpoints, $value);
+        @if $type == max {
+            $value: $value - 1px;
+        }
+        @media only screen and (#{$type}-#{$dimension}: $value) {
+            @content;
+        }
+    }
+}
+
+@mixin ts($prop, $duration, $func: ease-in-out) {
+    transition: $prop $duration $func;
+}
